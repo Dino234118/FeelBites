@@ -25,10 +25,6 @@ CORS(app, resources={
     }
 })
 
-# Spotify API credentials
-SPOTIFY_CLIENT_ID = "ff20fd4ffc754be1ae1b7082c03f53fc"
-SPOTIFY_CLIENT_SECRET = "7e25ba4b20fa4e90822a11b8e12b1e19"
-
 # Set up Spotify client
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
     client_id=SPOTIFY_CLIENT_ID,
